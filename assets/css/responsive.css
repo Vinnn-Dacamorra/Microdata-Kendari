@@ -1,0 +1,128 @@
+/**
+ * =====================================================
+ * RESPONSIVE STYLES
+ * =====================================================
+ */
+
+/* Tablet dan Mobile - 768px ke bawah */
+@media (max-width: 768px) {
+    /* Typography */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    
+    /* Hero */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: var(--font-size-base);
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+    }
+    
+    /* Navbar */
+    .navbar-brand {
+        width: 100%;
+    }
+    
+    .navbar-toggler {
+        display: block;
+    }
+    
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: var(--shadow-md);
+        padding: var(--spacing-md);
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .navbar-menu.active {
+        display: flex;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .nav-link {
+        padding: var(--spacing-sm);
+    }
+    
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        padding-left: var(--spacing-md);
+    }
+    
+    .navbar-actions {
+        flex-direction: column;
+        width: 100%;
+        margin-top: var(--spacing-md);
+    }
+    
+    .navbar-actions .btn {
+        width: 100%;
+    }
+    
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Table */
+    .table-responsive {
+        font-size: var(--font-size-sm);
+    }
+    
+    th, td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+/* Mobile - 480px ke bawah */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .hero {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.25rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.75rem;
+    }
+    
+    .stat-card {
+        padding: var(--spacing-md);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
